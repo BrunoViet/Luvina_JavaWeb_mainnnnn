@@ -1,0 +1,34 @@
+.header {
+    text-align      : center;
+    height          : 100px;
+    margin-top      : 10px;
+    font-size       : 60px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfoDuiozNdePhNjNZ_j4e6jG5dFLAw7Lf3a7vIY7Ua&s');
+    color           : yellowgreen;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.list-group-item:hover {
+    background: #2a62f6;
+    color     : whitesmoke;
+}
+
+.px-2:hover,
+i:hover {
+    color : greenyellow;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 860px) and (min-width: 768px) {
+    .list-group-item {
+        padding: 3px;
+        margin : 0;
+    }
+}
+
+header {
+    z-index: 1;
+}

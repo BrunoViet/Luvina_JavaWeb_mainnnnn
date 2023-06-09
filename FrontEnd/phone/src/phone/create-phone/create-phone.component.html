@@ -1,0 +1,38 @@
+<div class="container">
+    <h2 class="text-center text-primary">Thêm mới sản phẩm</h2>
+    <form [formGroup]="phoneForm" *ngIf="phoneForm" (ngSubmit)="submit()" class="container">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Tên:</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                formControlName="brand">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Mô tả:</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                formControlName="description">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Link ảnh:</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                formControlName="imgUrl">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Giá:</label>
+            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                formControlName="price">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Thuộc hãng nào:</label>
+
+            <select formControlName="category" class="form-select" aria-label="Default select example">
+                <option *ngFor="let category of categoryList" [ngValue]="category">{{category.name}}</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Thêm</button>
+        <button type="button" style="margin-left: 20px;" routerLink="/" class="btn btn-secondary">Hủy</button>
+    </form>
+</div>

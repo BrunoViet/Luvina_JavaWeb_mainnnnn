@@ -1,0 +1,24 @@
+<h2 class="text-primary text-center">Chi tiết sản phẩm</h2>
+<div class="card mb-3 container-fluid">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img height="200" [src]="phoneDetail.imgUrl" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8" style="background-color: whitesmoke;">
+            <div class="card-body" style="display: flex; flex-direction: column; align-items: center;
+            justify-content: center;gap: 20px; font-size: 40px;margin-top: 40px;
+            ">
+                <p class="card-title text-center" style="font-size: 50px;font-weight: bold;text-transform: uppercase">
+                    {{phoneDetail.brand}}</p>
+                <p class="card-text">Mô tả: <small style="font-weight: bold">{{phoneDetail.description}}</small></p>
+                <p class="card-text">Giá: <small style="font-weight: bold">{{phoneDetail.price?.toLocaleString()}}
+                        đ</small>
+                </p>
+                <p class="card-text">Thuộc hãng: <small style="font-weight: bold">{{phoneDetail.category?.name}}</small>
+                </p>
+                <button type="button" class="btn btn-success" [routerLink]="['/order',phoneDetail.id]">Thêm vào giỏ hàng</button>
+                <button type="button" class="btn btn-primary" routerLink="/">Trở về trang chủ</button>
+            </div>
+        </div>
+    </div>
+</div>  

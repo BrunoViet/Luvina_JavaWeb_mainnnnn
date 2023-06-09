@@ -1,0 +1,225 @@
+<body>
+    <div class="row p-2 m-0">
+        <div class="col-md-2 col-sm-4">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button style="font-weight: bolder;" class="accordion-button text-success" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Điện thoại
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="list-group" *ngFor="let category of categoryList">
+                                <button type="button" routerLink="/"
+                                    class="list-group-item list-group-item-action  ">{{category.name}}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button style="font-weight: bolder;"
+                                class="accordion-button collapsed d-flex justify-content-center text-danger "
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                Laptop
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="list-group">
+                                    <button type="button" class="list-group-item list-group-item-action  ">Laptop
+                                        Mac
+                                    </button>
+                                    <button type="button" class="list-group-item list-group-item-action  ">Laptop
+                                        Dell
+                                    </button>
+                                    <button type="button" class="list-group-item list-group-item-action  ">Laptop
+                                        HP
+                                    </button>
+                                    <button type="button" class="list-group-item list-group-item-action  " disabled>
+                                        Laptop Lenovo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-2">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button style="font-weight: bolder;"
+                                class="accordion-button collapsed d-flex justify-content-center text-warning "
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                aria-expanded="false" aria-controls="collapseFive">
+                                Tablet
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="list-group">
+                                    <button type="button" class="list-group-item list-group-item-action  ">
+                                        SamSung
+                                    </button>
+                                    <button type="button" class="list-group-item list-group-item-action  ">
+                                        Ipad
+                                    </button>
+                                    <button type="button" class="list-group-item list-group-item-action  ">Laptop
+                                        Xiaomi
+                                    </button>
+                                    <button type="button" class="list-group-item list-group-item-action  " disabled>
+                                        Asus
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-2">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button style="font-weight: bolder;"
+                                class="accordion-button collapsed d-flex justify-content-center text-primary"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                aria-expanded="false" aria-controls="collapseFour">
+                                Phụ kiện
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="list-group">
+                                    <button type="button" class="list-group-item list-group-item-action  ">
+                                        Màn hình
+                                    </button>
+                                    <button type="button" class="list-group-item list-group-item-action  ">
+                                        Tai nghe
+                                    </button>
+                                    <button type="button" class="list-group-item list-group-item-action  ">Laptop
+                                        Sạc dự phòng
+                                    </button>
+                                    <button type="button" class="list-group-item list-group-item-action  " disabled>
+                                        Ốp điện thoại
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-2">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button style="font-weight: bolder;"
+                                class="accordion-button collapsed d-flex justify-content-center " type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Dịch vụ thêm
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="list-group">
+                                    <button type="button" class="list-group-item list-group-item-action  ">
+                                        Thay màn hình
+                                    </button>
+                                    <button type="button" class="list-group-item list-group-item-action  ">
+                                        Cập nhật hệ điều hành
+                                    </button>
+                                    <button type="button" class="list-group-item list-group-item-action  ">Laptop
+                                        Thay pin
+                                    </button>
+                                    <button type="button" class="list-group-item list-group-item-action  " disabled>
+                                        Thu cũ đổi mới
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 col-sm-4">
+
+            <form class="d-flex justify-content-end">
+                <input class="form-control m-2 my-3" size="30" style="height: 40px; width: auto" type="search"
+                    placeholder="Tìm kiếm sách" aria-label="Search" #name />
+
+                <button class="btn btn-outline-primary my-3" type="submit">
+                    Tìm
+                </button>
+            </form>
+
+            <div class="row ">
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-2 " *ngFor="let phone of phoneList">
+                    <div class="card p-0" style="max-height:600px">
+                        <img [routerLink]="['/detail',phone.id]" style="height:350px; cursor: pointer"
+                            [src]="phone.imgUrl" class="card-img-top" alt="..." />
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-title" style="font-size: 21px; font-weight: bold;">{{phone.brand}} </p>
+                            <p class="card-title" style="font-size: 17px;">{{phone.description}} </p>
+                            <p class="text-warning" style="font-size: 20px">{{phone.price?.toLocaleString()}} đ</p>
+                            <br>
+                            <div
+                                style="height: 15px; display: flex; align-items: flex-end;justify-content: space-evenly;">
+                                <button class="btn btn-warning" [routerLink]="['/update',phone.id]">Sửa</button>
+                                <button (click)="deleteForm(phone)" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal" class="btn btn-danger">Xóa</button>
+                                <button [routerLink]="['/order',phone.id]" class="btn btn-success">Thêm vào giỏ
+                                    hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="col-md-2 col-sm-4">
+            <div class="row">
+                <div class="col-md-12 col-sm-6">
+                    <div class="bg-light mb-4 d-flex justify-content-center align-items-center">
+                        <img height="200px" width="100%"
+                            src="https://cdn.tgdd.vn/Files/2018/05/10/1087515/ro-ri-hinh-anh-chiec-dien-thoai-gap-man-hinh-doc-dao-cua-samsung-3.jpg"
+                            alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-sm-6">
+                    <div class="bg-light d-flex justify-content-center align-items-center">
+                        <img height="200px" width="100%"
+                            src="https://vnn-imgs-a1.vgcloud.vn/gulftomorrow.com/wp-content/uploads/2019/03/DSCF43651-1.jpg"
+                            alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-sm-6 mt-4">
+                    <div class="bg-light d-flex justify-content-center align-items-center">
+                        <img height="200px" width="100%"
+                            src="https://images.fpt.shop/unsafe/filters:quality(90)/fptshop.com.vn/uploads/images/tin-tuc/146935/Originals/apple-iphone-13-pro-max-01067.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Xác nhận</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Bạn có muốn xóa sản phẩm: <span class="text-danger">{{phoneDelete.brand}}</span> này không?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                        (click)="delete(phoneDelete.id)">Xóa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
